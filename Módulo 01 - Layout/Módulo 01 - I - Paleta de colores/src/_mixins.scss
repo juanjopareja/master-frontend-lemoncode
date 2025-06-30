@@ -1,0 +1,12 @@
+@use "variables.scss" as var;
+
+@mixin box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var.$height-boxes;
+    width: var.$width-boxes;
+    border-radius: var.$border-radius-boxes;
+    font-size: var.$font-size-boxes;
+    margin: var.$margin-boxes;
+}

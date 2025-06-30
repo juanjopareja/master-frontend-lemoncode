@@ -1,0 +1,24 @@
+$font-size-boxes: 14px;
+$width-boxes: 80px;
+$height-boxes: 90px;
+$border-radius-boxes: 5px;
+$color-base-1: #f64836; 
+$color-base-2: #3f4cb2;
+$color-base-3: #48b056;
+$font-color-base: white;
+$color-box-text-1: #54dafb;
+$color-box-text-2: #b5a546;
+$color-box-text-3: #a64ea9;
+$margin-boxes: 2px;
+
+$background-color-base: (
+  1: $color-base-1,
+  2: $color-base-2,
+  3: $color-base-3,
+);
+
+$color-box-text: (
+  1: $color-box-text-1,
+  2: $color-box-text-2,
+  3: $color-box-text-3,
+);

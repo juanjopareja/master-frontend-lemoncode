@@ -1,3 +1,65 @@
+@use "variables.scss" as var;
+@use "mixins.scss" as mix;
+@use "sass:map";
+
 body {
-  background-color: aquamarine;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.colors-container {
+  display: flex;
+  flex-direction: column;
+
+  .container-1,
+  .container-2,
+  .container-3 {
+    display: flex;
+
+    .box {
+      @include mix.box;
+    }
+
+    .base-color {
+      width: var.$width-boxes + 20px;
+      color: var.$font-color-base;
+    }
+  }
+}
+
+@for $i from 1 through 3 {
+  .container-#{$i} {
+    @for $j from 1 through 4 {
+      .darken-#{$j} {
+        background-color: darken(map.get(var.$background-color-base, $i), $j * 5%);
+      }
+
+      .lighten-#{$j} {
+        background-color: lighten(map.get(var.$background-color-base, $i), $j * 5%);
+      }
+    }
+
+    .base-color {
+      background-color: map.get(var.$background-color-base, $i);
+      
+      .color-box-text {
+        color: var.$font-color-base;
+      }
+    }
+
+    .color-box-text {
+      color: map.get(var.$color-box-text, $i);
+    }
+  }
+}
+
+
