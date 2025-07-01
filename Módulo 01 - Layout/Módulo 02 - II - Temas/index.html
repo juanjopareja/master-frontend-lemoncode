@@ -4,10 +4,30 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link type="text/css" rel="stylesheet" href="mystyle.scss" />
-    <title>Layout Playground</title>
+    <link type="text/css" rel="stylesheet" href="/src/mystyle.css" />
+    <title>Temas</title>
   </head>
   <body>
-    <h1>Layout Playground</h1>
+    <main>
+      <div class="theme-container">
+        <div class="theme-header">
+          <h2>TEMAS</h2>
+        </div>
+        <div class="theme-content">
+          <h2>Estilo del tema importado:</h2>
+          <div class="boxes">
+            <div class="box box-1"><span>Base</span></div>
+            <div class="box box-2"><span>Important</span></div>
+            <div class="box box-3"><span>Warning</span></div>
+          </div>
+          <h3 class="primary-font">Principal Font</h3>
+          <h3 class="secondary-font">Secondary Font</h3>
+          <div class="shadow-box">
+            <h3>Box with shadow</h3>
+          </div>
+          <h5 class="note">*nota: cambiar dentro de mystyle.css el @import de "theme1.css" por "theme2.css" para mostrar el otro tema</h5>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

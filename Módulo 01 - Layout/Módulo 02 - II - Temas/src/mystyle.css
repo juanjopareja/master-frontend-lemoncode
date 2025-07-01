@@ -1,0 +1,62 @@
+@import "theme2.css";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.theme-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100px;
+  margin: 5px 0;
+  border-radius: 3px;
+  color: var(--box-text-color);
+  text-shadow: var(--text-shadow);
+}
+
+.box-1 {
+  background-color: var(--primary-color);
+}
+
+.box-2 {
+  background-color: var(--secondary-color);
+}
+
+.box-3 {
+  background-color: var(--background-color);
+}
+
+.primary-font {
+  font-family: var(--principal-font);
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.secondary-font {
+  font-family: var(--secondary-font);
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.shadow-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 70px;
+  box-shadow: var(--box-shadow);
+  margin-top: 25px;
+}
