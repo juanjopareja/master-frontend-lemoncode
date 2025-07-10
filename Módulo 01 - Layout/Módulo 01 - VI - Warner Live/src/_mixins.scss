@@ -1,0 +1,30 @@
+@use "variables" as var;
+
+@mixin desktop-resolution {
+    @media (max-width: var.$desk-resolution) {
+        @content;
+    }
+}
+
+@mixin mobile-resolution {
+    @media (max-width: var.$mobile-resolution) {
+        @content;
+    }
+}
+
+@mixin animation-button {
+    cursor: pointer;
+    background-color: var.$button-bgcolor;
+    color: var.$button-color-font;
+    border-radius: 3px;
+    transition: .1s ease-in-out;
+}
+
+@mixin animation-item {
+    cursor: pointer;
+
+    @media (min-width: var.$desk-resolution) {
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+    }
+}
